@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-1</title>
+    <style>
+        body {
+    font-family: Georgia, 'Times New Roman', Times, serif;   /*Define Font Family for the whole body*/
+}
+table, th, td {
+    border: 1px solid black;    /*Make border for whole table(rows and column)*/
+    text-align: center;           /*Align text in Center*/
+}
+.main-heading {
+    text-align: center;     /*Align text in Center*/
+    color: red;           /*Set the color red for main heading*/
+}
+table {
+    width: 90%;             /*Set width for the table. Table take 90% of the screen width*/
+    margin: 20px auto;      /*Margin top and bottom set to 20px while the left and right margin is set on Auto*/
+    border-collapse: collapse;   /*Collapse the Border*/
+}
+th, td {
+    padding: 5px;       /*Padding set for th and td*/
+    text-align: center;        /*Align text in Center*/
+}
+.table-heading {
+    background-color: #03AED2;    /*Set the background color*/
+    color: black;           /*Set the color of the text*/
+}
+.Row-1 {
+    background-color: #C5EBAA;    /*Set the background color*/
+    color: black;         /*Set the color of the text*/
+}
+.Row-2 {
+    background-color: #A5DD9B;
+    color: black;
+}
+.Row-3 {
+    background-color: #D5D0CD;
+    color: black;
+}
+.Row-4 {
+    background-color: #A2A392;
+    color: black;
+}
+.Row-5 {
+    background-color: #EAC696;
+    color: black;
+}
+.Row-6 {
+    background-color: #C8AE7D;
+    color: black;
+}
+.Row-7 {
+    background-color: #D2D180;
+    color: black;
+}
+.Row-8 {
+    background-color: #B2B377;
+    color: black;
+}
+.Row-9 {
+    background-color: #ECCA9C;
+    color: black;
+}
+.Row-10 {
+    background-color: #DBA979;
+    color: black;
+}
+
+    </style>
+</head>
+<body>
+    <table>   <!-- Created a Table -->
+        <h1 class="main-heading">My Shortlist Universities</h1>     <!-- Added H2 tag for main heading-->
+        <tr class="table-heading">    <!-- Use to add content for the first Row -->
+            <th>Universities</th>    <!-- Add content using th because of the first row is for my heading -->
+            <th>Program</th>
+            <th>Country</th>
+            <th>Basic Requirements</th>
+            <th>IELTS Requirements</th>
+            <th>Tution Fee</th>
+            <th>Assessment Test (if any)</th>
+            <th>Deadline</th>
+            <th>Additional Info</th>
+            <th>Universities Response</th>
+        </tr>
+        <tr class="Row-1">    <!-- Use to add content for the second Row -->
+            <td>Technical University of Munich</td>    <!-- Add content using td because of the second row is for my related information -->
+            <td>Master of Science in Communications Engineering (MSCE)</td>
+            <td>Germany</td>
+            <td>BS in electrical or electronics engineering, information technology, computer science.</td>
+            <td>Yes. 6.5 Overall</td>
+            <td>None</td>
+            <td>NO</td>
+            <td>31st MAY (extended)</td>
+            <td>
+                <a href="https://www.ei.tum.de/msce/applying/ ">Apply Here</a>   <!-- Use anchor tag to link application site -->
+            </td>
+            <td>Waiting</td>
+        </tr>
+        <tr class="Row-2">
+            <td>TH Köln (University of Applied Sciences)</td>
+            <td>Automation & IT (Master of Engineering)</td>
+            <td>Germany</td>
+            <td>
+                <ul>
+                    <li>BS degree in respective field</li>
+                    <li>Proof of English proficiency</li>
+                    <li>A two-page description of your motivation to study.</li>
+                </ul>
+            </td>
+            <td>Yes. 6.0 Overall</td>
+            <td>None</td>
+            <td>Maybe aptitude test</td>
+            <td>30th April</td>
+            <td>
+                <a href="https://www.th-koeln.de/en/academics/uni-assist-document-review_8553.php ">Application via UniAssist portal</a>
+            </td>
+            <td>Waiting</td>
+        </tr>
+        <tr class="Row-3">
+            <td>University of Siegen</td>
+            <td>International Master's Programme in Nanoscience and Nanotechnology</td>
+            <td>Germany</td>
+            <td>BS in electrical or electronics engineering</td>
+            <td>Yes. 6.0 Overall</td>
+            <td>None</td>
+            <td>No</td>
+            <td>30th April</td>
+            <td>
+                <a href="https://unisono.uni-siegen.de/qisserver/pages/cs/sys/portal/hisinoneStartPage.faces ">Application link</a>
+            </td>
+            <td>Waiting</td>
+        </tr>
+        <tr class="Row-4">
+            <td>University of Liverpool</td>
+            <td>Masters in Electronics Engineering</td>
+            <td>England</td>
+            <td>BS degree in respective field</td>
+            <td>Yes. 6.5 Overall</td>
+            <td>£ 18,250 after scholarship</td>
+            <td>No</td>
+            <td>12th July</td>
+            <td>
+                <a href="https://www.liverpool.ac.uk/study/postgraduate-research/degrees/electrical-engineering-and-electronics/">Course Outline</a>
+            </td>
+            <td>Un-Conditional Offer letter recieved</td>
+        </tr>
+        <tr class="Row-5">
+            <td>University of Oulu</td>
+            <td>Master's in Sustainable and Autonomous Systems</td>
+            <td>Finland</td>
+            <td>BS in electrical or electronics engineering</td>
+            <td>Yes. 6.5 Overall</td>
+            <td>12,000 € per academic year</td>
+            <td>No</td>
+            <td>13th February</td>
+            <td>
+                <a href="https://www.oulu.fi/en/apply/masters-sustainable-autonomous-systems">Course Overview</a>
+            </td>
+            <td>Rejected</td>
+        </tr>
+        <tr class="Row-6">
+            <td>University of Oulu</td>
+            <td>Master's in Computer Science and Engineering</td>
+            <td>Finland</td>
+            <td>BS in Computer Science, Information technology or respective field</td>
+            <td>Yes. 6.5 Overall</td>
+            <td>10,000 € per academic year</td>
+            <td>No</td>
+            <td>13th February</td>
+            <td>
+                <a href="https://www.oulu.fi/en/apply/masters-computer-science-and-engineering">Course Overview</a>
+            </td>
+            <td>Rejected</td>
+        </tr>
+        <tr class="Row-7">
+            <td>Tampere University of Applied Sciences</td>
+            <td>Master's in System-on-Chip Design</td>
+            <td>Finland</td>
+            <td>BS in electrical or electronics engineering, information technology, computer science.</td>
+            <td>Yes. 6.5 Overall</td>
+            <td>12,000 € per academic year</td>
+            <td>No</td>
+            <td>5th February</td>
+            <td>
+                <a href="https://www.tuni.fi/en/study-with-us/system-chip-design-computing-sciences-and-electrical-engineering">Course Overview</a>
+            </td>
+            <td>No Response yet</td>
+        </tr>
+        <tr class="Row-8">
+            <td>Technische Universität Ilmenau</td>
+            <td>Master of Science in Micro- and Nanotechnologies</td>
+            <td>Germany</td>
+            <td>BS in electrical or electronics engineering</td>
+            <td>Yes. 6.5 Overall</td>
+            <td>None</td>
+            <td>No</td>
+            <td>15th July</td>
+            <td>
+                <a href="https://apply.tu-ilmenau.de/scripts/mgrqispi.dll?APPNAME=CampusNet&PRGNAME=EXTERNALPAGES&ARGUMENTS=-N000000000000001,-N000298,-Awillkommen">Application link</a>
+            </td>
+            <td>Waiting</td>
+        </tr>
+        <tr class="Row-9">
+            <td>Saarland University</td>
+            <td>Master of Science in Embedded Systems (MSc)</td>
+            <td>Germany</td>
+            <td>BS in electrical or electronics engineering.</td>
+            <td>Yes. 7.0 Overall</td>
+            <td>None</td>
+            <td>No</td>
+            <td>15th May</td>
+            <td>
+                <a href="https://saarland-informatics-campus.de/en/studium-studies/master-english/application-guide">Application link</a>
+            </td>
+            <td>Waiting</td>
+        </tr>
+        <tr class="Row-10">
+            <td>Sapienza Università di Roma</td>
+            <td>Master of Science in DATA SCIENCE</td>
+            <td>Itlay</td>
+            <td>BS in Computer Science, information technology or any respective field.</td>
+            <td>yes. 6.5 Overall</td>
+            <td>10,000 € per academic year</td>
+            <td>Maybe apptitude test</td>
+            <td>10th March</td>
+            <td>
+                <a href="https://corsidilaurea.uniroma1.it/en/corso/2024/32344/home">Course Overview</a>
+            </td>
+            <td>Rejected</td>
+        </tr>
+      </table>
+</body>
+</html>

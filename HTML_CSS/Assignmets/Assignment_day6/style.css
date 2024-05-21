@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* body {
+    background-color: #FFE0B5;
+} */
+.global-container {
+    margin: 20px 200px;
+    border: 3px solid black;
+    background-color: #F8C794;
+}
+figure {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px; 
+    background-color: #D8AE7E;
+}
+img {
+    width: 100%;
+    height: 400px;
+    opacity: 0.7;
+}
+img:hover {
+    opacity: 1.0;
+}
+h1, h3 {
+    color: rgb(88, 23, 23);
+    text-decoration: double underline;
+}
+.title {
+    text-align: center;
+}
+.body {
+    text-align: justify;
+    padding: 10px;
+}
+.container {
+    display: flex;
+}
+
+.past {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.text-1 {
+    order: 1;
+    margin-right: 20px; 
+}
+
+.figure-1 {
+    order: 2;
+}
+.mosque {
+    height: 350px;
+    width: 500px;
+}
+.food {
+    display: flex;
+    align-items: center;
+}
+.text-2 {
+    order: 2;
+    margin-left: 10px;
+}
+.figure-2 {
+    order: 1;
+}
+.delight {
+    width: 500px;
+    height: 350px;
+}
+.global-container .body > p {
+    background-color: rgba(243, 167, 27, 0.7);
+}
+h3 + p {
+    background-color: aquamarine;
+}
+.global-container .body p:first-child {
+    background-color: rgb(86, 160, 26);
+}
+.global-container .body .last-div p:last-child {
+    background-color: rgb(113, 38, 184);
+}
+.global-container p:hover {
+    background-color: rgb(206, 36, 36);
+}
+h1:hover {
+    background-color: rgb(224, 112, 7);
+}
+.global-container ::selection {
+    color: red;
+    background: yellow;
+}

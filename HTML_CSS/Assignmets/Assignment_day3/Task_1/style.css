@@ -1,0 +1,68 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;   /*Define Font Family for the whole body*/
+}
+table, th, td {
+    border: 1px solid black;    /*Make border for whole table(rows and column)*/
+    text-align: center;           /*Align text in Center*/
+}
+.main-heading {
+    text-align: center;     /*Align text in Center*/
+    color: red;           /*Set the color red for main heading*/
+    text-decoration: double underline;
+}
+table {
+    width: 90%;             /*Set width for the table. Table take 90% of the screen width*/
+    margin: 20px auto;      /*Margin top and bottom set to 20px while the left and right margin is set on Auto*/
+    border-collapse: collapse;   /*Collapse the Border*/
+}
+th, td {
+    padding: 5px;       /*Padding set for th and td*/
+    text-align: center;        /*Align text in Center*/
+}
+.table-heading {
+    background-color: #03AED2; 
+    color: black;           
+}
+tr:nth-child(even){
+    background-color: aquamarine;
+}
+/* .Row-1 {
+    background-color: #C5EBAA;
+    color: black; 
+}       
+.Row-2 {
+    background-color: #A5DD9B;
+    color: black;
+}
+.Row-3 {
+    background-color: #D5D0CD;
+    color: black;
+}
+.Row-4 {
+    background-color: #A2A392;
+    color: black;
+}
+.Row-5 {
+    background-color: #EAC696;
+    color: black;
+}
+.Row-6 {
+    background-color: #C8AE7D;
+    color: black;
+}
+.Row-7 {
+    background-color: #D2D180;
+    color: black;
+}
+.Row-8 {
+    background-color: #B2B377;
+    color: black;
+}
+.Row-9 {
+    background-color: #ECCA9C;
+    color: black;
+}
+.Row-10 {
+    background-color: #DBA979;
+    color: black;
+} */
