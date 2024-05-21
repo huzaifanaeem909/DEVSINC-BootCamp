@@ -1,2 +1,2 @@
 # DEVSINC-BootCamp
-In this repository i will share all my training details during my DEVSINC-BootCamp.
+Welcome to my GitHub repository for the Web Development Bootcamp at Devsinc! This repository is where I'll be sharing all my work and projects from the bootcamp. Throughout this journey, I'll be learning and applying various web development skills, including HTML, CSS, JavaScript, and more. You'll find different assignments and projects here, each reflecting my progress and what I've learned. It's a great way to track my improvement and see the practical applications of the concepts taught in the bootcamp.
