@@ -109,3 +109,74 @@ a {
 span {
     margin-top: 28px;
 }
+
+footer {
+    height: 170px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.foot_section {
+    width: 980px;
+    /* margin: 0 130.8px; */
+}
+.lang {
+    display: flex;
+    align-items: center;
+    padding: 8px 0 0;
+}
+.lang a {
+    padding: 0 10px 0 0;
+    text-decoration: none;
+    font-size: 12px;
+    color: #8a8d91;
+}
+.lang_button button {
+    margin: 0 10 0 0;
+    color: #8a8d91;
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 8px;
+    height: 19.6px;
+    width: 29.6px;
+    cursor: pointer;
+}
+.lang_line {
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    height: 8px;
+    margin: 0 0 8px 0;
+}
+.footer_links {
+    margin: 0 -20px 0 0;
+}
+.footer_links a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #8a8d91;
+    margin: 0 20px 0 0;
+}
+.copyrights {
+    font-size: 11px;
+    color: #8a8d91;
+    position: relative;
+    top: 20px;
+}
+a:hover {
+    text-decoration: underline;
+}
+input:focus {
+    outline: none;
+    border: 1px solid #0866ff;
+    box-shadow: 0  0 1px 1px rgba(0, 0, 0, .1);
+}
+.login_button button:hover {
+    background-color: #2375fa;
+}
+.account_button a[role]:hover {
+    background-color: #1eab01;
+}
