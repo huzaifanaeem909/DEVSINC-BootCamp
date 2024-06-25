@@ -10,6 +10,14 @@ const API_KEY = "56928d514d0242f5be34a7615b58eba6";
 const fetchData = async (query) => {
   recipeContainer.innerHTML = "<h2>Fetching Recipes...</h2>";
   try {
+    // Check if the search results are already in local storage
+    const storedSearchResults = localStorage.getItem(`recipeSearchResults_${query}`);
+    if (storedSearchResults) {
+      const recipes = JSON.parse(storedSearchResults);
+      displayRecipes(recipes);
+      return;
+    }
+
     const data = await fetch(
       `https://api.spoonacular.com/recipes/complexSearch?query=${query}&apiKey=${API_KEY}`
     );
@@ -24,7 +32,7 @@ const fetchData = async (query) => {
 
     // Store the response in local storage
     localStorage.setItem(
-      "recipeSearchResults",
+      `recipeSearchResults_${query}`,
       JSON.stringify(response.results)
     );
 
@@ -62,9 +70,6 @@ const fetchRandomRecipes = async () => {
       return;
     }
 
-    // Store the random recipes in local storage
-    localStorage.setItem("randomRecipes", JSON.stringify(response.recipes));
-
     displayRecipes(response.recipes);
   } catch (error) {
     recipeContainer.innerHTML = "<h2>Error in fetching recipes...</h2>";
@@ -74,6 +79,7 @@ const fetchRandomRecipes = async () => {
 
 // Function to display recipes
 const displayRecipes = (recipes) => {
+  recipeContainer.innerHTML = ""; // Clear previous content
   recipes.forEach((recipe) => {
     const { id, title, image } = recipe;
     const card = document.createElement("div");
@@ -144,18 +150,7 @@ searchBtn.addEventListener("click", (e) => {
   }
 });
 
-// Retrieve data from local storage on page load
+// Always fetch random recipes on page load
 window.addEventListener("load", () => {
-  const storedSearchResults = localStorage.getItem("recipeSearchResults");
-  const storedRandomRecipes = localStorage.getItem("randomRecipes");
-
-  if (storedSearchResults) {
-    const recipes = JSON.parse(storedSearchResults);
-    displayRecipes(recipes);
-  } else if (storedRandomRecipes) {
-    const recipes = JSON.parse(storedRandomRecipes);
-    displayRecipes(recipes);
-  } else {
-    fetchRandomRecipes();
-  }
+  fetchRandomRecipes();
 });
