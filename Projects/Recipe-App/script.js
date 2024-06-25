@@ -11,7 +11,9 @@ const fetchData = async (query) => {
   recipeContainer.innerHTML = "<h2>Fetching Recipes...</h2>";
   try {
     // Check if the search results are already in local storage
-    const storedSearchResults = localStorage.getItem(`recipeSearchResults_${query}`);
+    const storedSearchResults = localStorage.getItem(
+      `recipeSearchResults_${query}`
+    );
     if (storedSearchResults) {
       const recipes = JSON.parse(storedSearchResults);
       displayRecipes(recipes);
@@ -87,7 +89,7 @@ const displayRecipes = (recipes) => {
     card.innerHTML = `
       <a href="recipe.html?id=${id}">
         <img style="width: 100%; height: 200px;" src="${image}" alt="${title}" />
-        <h4 style="height: 57px; display: flex; align-items: center; justify-content: center;">${title}</h4>
+        <h4>${title}</h4>
       </a>
       `;
     const button = document.createElement("button");
